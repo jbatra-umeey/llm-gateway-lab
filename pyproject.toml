@@ -1,0 +1,6 @@
+[project]
+name = "llm-gateway-lab"
+version = "0.1.0"
+description = "AI engineering portfolio reference implementation"
+requires-python = ">=3.11"
+dependencies = []
