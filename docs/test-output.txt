@@ -1,0 +1,21 @@
+test_cache_expires (test_gateway.GatewayTests.test_cache_expires) ... ok
+test_cache_isolated_by_tenant (test_gateway.GatewayTests.test_cache_isolated_by_tenant) ... ok
+test_circuit_allows_new_attempt_after_cooldown (test_gateway.GatewayTests.test_circuit_allows_new_attempt_after_cooldown) ... ok
+test_concurrent_reservations_do_not_overspend (test_gateway.GatewayTests.test_concurrent_reservations_do_not_overspend) ... ok
+test_failure_falls_back_and_opens_circuit (test_gateway.GatewayTests.test_failure_falls_back_and_opens_circuit) ... ok
+test_model_change_invalidates_cache (test_gateway.GatewayTests.test_model_change_invalidates_cache) ... ok
+test_negative_quota_values_rejected (test_gateway.GatewayTests.test_negative_quota_values_rejected) ... ok
+test_quota_denial_never_calls_provider (test_gateway.GatewayTests.test_quota_denial_never_calls_provider) ... ok
+test_settlement_is_not_double_charged (test_gateway.GatewayTests.test_settlement_is_not_double_charged) ... ok
+test_trace_omits_request_text (test_gateway.GatewayTests.test_trace_omits_request_text) ... ok
+test_unknown_outcome_charges_full_reservation (test_gateway.GatewayTests.test_unknown_outcome_charges_full_reservation) ... ok
+test_unsettled_work_survives_restart (test_gateway.GatewayTests.test_unsettled_work_survives_restart) ... ok
+test_generate_wire_contract (test_model.ModelContractTests.test_generate_wire_contract) ... ok
+test_incomplete_response_is_rejected (test_model.ModelContractTests.test_incomplete_response_is_rejected) ... ok
+test_malformed_embedding_is_rejected (test_model.ModelContractTests.test_malformed_embedding_is_rejected) ... ok
+test_structured_output_must_be_object (test_model.ModelContractTests.test_structured_output_must_be_object) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.025s
+
+OK
