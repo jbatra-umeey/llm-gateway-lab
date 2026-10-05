@@ -1,0 +1,75 @@
+{
+  "mode": "simulation",
+  "note": "Credits are illustrative quota units, not money or current provider pricing.",
+  "requests": [
+    {
+      "text": "Demo response: Investigate an editor latency regression.",
+      "input_tokens": 10,
+      "output_tokens": 14,
+      "provider": "quality",
+      "model": "fixture-quality",
+      "cache_hit": false,
+      "charged_credits": 615,
+      "trace": [
+        {
+          "step": "provider_failure",
+          "provider": "fast",
+          "charged_credits": 553
+        },
+        {
+          "step": "provider_success",
+          "provider": "quality",
+          "latency_ms": 0.226
+        }
+      ]
+    },
+    {
+      "text": "Demo response: Investigate an editor latency regression.",
+      "input_tokens": 10,
+      "output_tokens": 14,
+      "provider": "quality",
+      "model": "fixture-quality",
+      "cache_hit": true,
+      "charged_credits": 0,
+      "trace": [
+        {
+          "step": "cache_hit"
+        }
+      ]
+    },
+    {
+      "text": "Demo response: Investigate an editor latency regression.",
+      "input_tokens": 10,
+      "output_tokens": 14,
+      "provider": "quality",
+      "model": "fixture-quality",
+      "cache_hit": false,
+      "charged_credits": 62,
+      "trace": [
+        {
+          "step": "circuit_open",
+          "provider": "fast"
+        },
+        {
+          "step": "provider_success",
+          "provider": "quality",
+          "latency_ms": 0.14
+        }
+      ]
+    }
+  ],
+  "balances": {
+    "tenant-a": {
+      "cap": 10000,
+      "used": 615,
+      "reserved": 0,
+      "available": 9385
+    },
+    "tenant-b": {
+      "cap": 10000,
+      "used": 62,
+      "reserved": 0,
+      "available": 9938
+    }
+  }
+}
